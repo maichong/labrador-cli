@@ -1,7 +1,14 @@
 {
   "name": "labrador-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "拉布拉多命令工具，微信小程序模块化开发框架",
+  "keywords": [
+    "labrador",
+    "wxa",
+    "wxapp",
+    "weixin",
+    "wechat"
+  ],
   "main": "index.js",
   "bin": {
     "labrador": "bin/labrador"
