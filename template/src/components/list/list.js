@@ -4,15 +4,21 @@
  * @author Liang <liang@maichong.it>
  */
 
-module.exports = class List {
-  constructor() {
-    this.data = {
-      items: [
-        { title: 'Labrador' },
-        { title: 'Alaska' },
-      ]
-    };
-  }
+import wx from 'labrador';
+import Title from '../title/title';
+
+export default class List extends wx.Component {
+
+  data = {
+    items: [
+      { title: 'Labrador' },
+      { title: 'Alaska' }
+    ]
+  };
+
+  children = {
+    title: new Title({ text: 'The List Title' })
+  };
 
   onLoad() {
     this.setData({
