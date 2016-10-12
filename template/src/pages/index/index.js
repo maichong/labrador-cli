@@ -25,6 +25,5 @@ export default class Index extends wx.Component {
     this.setData({
       userInfo: userInfo
     });
-    this.update();
   }
 }
