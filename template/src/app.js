@@ -1,5 +1,5 @@
 import wx from 'labrador';
-import { sleep } from './utils/util';
+import {sleep} from './utils/util';
 
 export default class {
   globalData = {
@@ -8,7 +8,8 @@ export default class {
 
   async onLaunch() {
     //调用API从本地缓存中获取数据
-    let logs = await wx.getStorage({ key: 'logs' }) || [];
+    let res = await wx.getStorage({ key: 'logs' });
+    let logs = res.data || [];
     logs.unshift(Date.now());
     await wx.setStorage({ key: 'logs', data: logs });
     this.timer();

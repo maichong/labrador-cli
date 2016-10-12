@@ -1,26 +1,23 @@
-function formatTime(date) {
-  var year = date.getFullYear();
-  var month = date.getMonth() + 1;
-  var day = date.getDate();
-
-  var hour = date.getHours();
-  var minute = date.getMinutes();
-  var second = date.getSeconds();
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
-}
-
 function formatNumber(n) {
   n = n.toString();
-  return n[1] ? n : '0' + n
+  return n[1] ? n : '0' + n;
 }
 
-function sleep(time) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, time);
-  });
+export function formatTime(date) {
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let second = date.getSeconds();
+  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':');
 }
 
-module.exports = {
-  formatTime,
-  sleep
-};
+export function sleep(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+export function add(a, b) {
+  return a + b;
+}

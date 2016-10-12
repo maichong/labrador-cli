@@ -1,9 +1,3 @@
-/**
- * @copyright Maichong Software Ltd. 2016 http://maichong.it
- * @date 2016-09-26
- * @author Liang <liang@maichong.it>
- */
-
 import wx from 'labrador';
 import Title from '../title/title';
 
@@ -25,4 +19,4 @@ export default class List extends wx.Component {
       items: [{ title: 'Collie' }].concat(this.data.items)
     });
   }
-};
+}

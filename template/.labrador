@@ -1,0 +1,10 @@
+{
+  "npmMap":{
+  },
+  "uglify":{
+    "mangle": [],
+    "compress": {
+      "warnings": false
+    }
+  }
+}

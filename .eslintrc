@@ -4,7 +4,9 @@
     "node": true
   },
   "globals": {
-    "__DEBUG__": true
+    "rm": true,
+    "cp": true,
+    "exec": true
   },
   "parser": "babel-eslint",
   "rules": {
