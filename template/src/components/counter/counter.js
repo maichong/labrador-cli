@@ -1,6 +1,6 @@
 import wx from 'labrador';
 
-const { number, func } = wx.Types;
+const { number, func } = wx.PropTypes;
 
 export default class Counter extends wx.Component {
 

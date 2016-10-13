@@ -1,7 +1,7 @@
 import wx from 'labrador';
 import randomColor  from '../../utils/random-color';
 
-const { string } = wx.Types;
+const { string } = wx.PropTypes;
 
 export default class Title extends wx.Component {
 
