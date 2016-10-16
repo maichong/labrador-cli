@@ -10,12 +10,21 @@ export default class Index extends wx.Component {
     count: 0
   };
 
-  get children() {
-    return {
-      list: new List(),
-      motto: new Title({ text: '@mottoTitle' }),
-      counter: new Counter({ count: '@count', onChange: this.handleCountChange })
-    };
+  children = {
+    list: new List(),
+    motto: new Title({ text: '@mottoTitle', hello: '@mottoTitle' }),
+    counter: new Counter({ count: '@count', onChange: '#handleCountChange' })
+  };
+
+  handleCountChange(count) {
+    this.setData({ count });
+  }
+
+  //事件处理函数
+  handleViewTap() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    });
   }
 
   async onLoad() {
@@ -32,16 +41,5 @@ export default class Index extends wx.Component {
 
   onReady() {
     this.setData('mottoTitle', 'Labrador');
-  }
-
-  handleCountChange(count) {
-    this.setData({ count });
-  }
-
-  //事件处理函数
-  handleViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    });
   }
 }

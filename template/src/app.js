@@ -1,5 +1,5 @@
 import wx from 'labrador';
-import {sleep} from './utils/util';
+import { sleep } from './utils/util';
 
 export default class {
   globalData = {
