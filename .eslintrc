@@ -10,6 +10,7 @@
   },
   "parser": "babel-eslint",
   "rules": {
+    "no-console": 0,
     "prefer-const": 0,
     "prefer-template": 0,
     "no-param-reassign": 0,
