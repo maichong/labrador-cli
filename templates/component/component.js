@@ -1,4 +1,5 @@
 import { Component, PropTypes } from 'labrador-immutable';
+import immutable from 'seamless-immutable';
 //import { connect } from 'labrador-redux';
 
 const { any } = PropTypes;
@@ -14,7 +15,7 @@ class COMPONENT_NAME extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = immutable({});
   }
 
   children() {

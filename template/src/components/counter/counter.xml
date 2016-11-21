@@ -1,3 +1,0 @@
-<view class="counter" catchtap="handleTap">
-  点击次数 {{num}}
-</view>

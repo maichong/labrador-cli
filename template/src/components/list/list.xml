@@ -1,4 +1,0 @@
-<view class="list">
-  <component key="title" name="title"/>
-  <list key="listItems" name="item"/>
-</view>

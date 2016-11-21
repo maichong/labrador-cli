@@ -1,5 +1,0 @@
-<view class="item {{cls}}">
-  <view class="item-inner" catchtap="handleTap">
-    {{title}}
-  </view>
-</view>
