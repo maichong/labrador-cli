@@ -1,7 +1,7 @@
 {
   "name": "labrador-cli",
-  "version": "0.6.2",
-  "description": "拉布拉多命令工具，微信小程序模块化开发框架",
+  "version": "0.6.3",
+  "description": "拉布拉多命令工具，微信小程序组件化开发框架",
   "keywords": [
     "labrador",
     "wxa",
