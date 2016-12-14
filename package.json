@@ -1,6 +1,6 @@
 {
   "name": "labrador-cli",
-  "version": "0.6.9",
+  "version": "0.6.10",
   "description": "拉布拉多命令工具，微信小程序组件化开发框架",
   "keywords": [
     "labrador",
@@ -40,7 +40,6 @@
     "less": "^2.7.1",
     "minimatch": "^3.0.3",
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.13.0",
     "radix64": "^1.1.0",
     "shelljs": "^0.7.4",
     "slash": "^1.0.0",
