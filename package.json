@@ -41,6 +41,7 @@
     "less": "^2.7.1",
     "minimatch": "^3.0.3",
     "mkdirp": "^0.5.1",
+    "pretty-data": "^0.40.0",
     "radix64": "^1.1.0",
     "shelljs": "^0.7.4",
     "slash": "^1.0.0",
